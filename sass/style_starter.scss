@@ -1,0 +1,167 @@
+
+/*Typography*/
+@import url('https://fonts.googleapis.com/css?family=Lalezar|Rubik:400,700,900');
+		
+		
+html {
+	font-family: "Rubik";
+}
+
+h1, h2, h3, .subtitle, .branding{
+	font-family: "Lalezar";
+	font-weight: normal;
+	letter-spacing: .05em;
+}
+
+/*HEADER*/
+
+body {
+	margin:0;
+}
+
+h1 {
+	font-size: 8.5vw;
+	line-height: .8;		
+}
+
+.subtitle {
+	border-top: 20px solid $tertiary-color;
+	padding-top: 20px;
+}
+
+.branding {
+	font-size: 1.5rem;
+	border:1px solid $primary-color;
+	margin:1rem;
+	padding: 0 .5rem;
+	border-radius: .5rem;
+}
+
+header {
+
+	min-height: 100vh;
+	color:$primary-color;
+	background-color: $secondary-color-faded;
+} 
+
+/*NAV*/
+	
+nav 
+{
+	width:350px;
+	min-height: 100vh;
+
+	button {
+	color:$primary-color;
+	font-size: .8rem;
+	border:none;
+	background-color: transparent;
+
+	&:after {
+		display: block;
+		font-size: 1.7rem;
+		}
+
+	}
+
+	&:hover {
+	left:0;
+
+	background-color: $primary-color;
+	color:$secondary-color;
+	}
+} 
+
+/*MAIN*/
+
+main 
+{
+	max-width: 1000px;
+	margin:auto;
+
+	img {
+		width:100%;
+		display: block;
+		margin-bottom: 1rem;
+	}			
+}
+
+article {
+
+	padding:.5rem;
+	box-shadow: 3px 3px 6px rgba(0,0,0,.5);
+	border-radius: 5px;
+	margin:2rem 0;	
+	border-left:30px solid $primary-color;
+	border-radius: 0 5px 5px 0;
+
+} 
+
+.image-container {
+	position: relative;
+}
+
+.attribution {
+	font-size: .5rem;
+
+	position: absolute;
+
+	bottom:0;
+	left:0;
+
+	color:white;
+	text-shadow: 1px 1px 0 black;
+	padding:4px;
+
+}
+
+/*FOOTER*/
+
+.footer-wrapper {
+	max-width: 1000px;
+	margin:auto;
+}
+
+footer {
+	color:white;
+	background-color: $secondary-color;
+	min-height: 100px;
+	padding:1rem;
+}
+
+/*ANCHOR HOVER UNDERLINE (use with mixin)*/
+
+/*
+position:relative;
+z-index: 1;
+
+color:$primary-color;
+text-decoration:none;
+
+
+&:hover {
+
+	&:after {
+
+	content:"";
+	display: block;
+	height:.7em;
+	background-color:$tertiary-color;
+	position:absolute;
+	bottom:-.2em;
+	left:0;
+	width:100%;
+	z-index: -1;
+
+	
+	}
+
+}*/
+
+
+		
+	
+	
+
+
+

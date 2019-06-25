@@ -1,0 +1,79 @@
+
+nav
+{
+	@include positiontop();
+	
+	left: 0;
+
+	width:350px;
+	min-height: 100vh;
+
+	transform: translate(-280px);
+	transition: transform .5s, background-color 1s;
+
+	button {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color:$primary-color;
+	font-size: .8rem;
+	border:none;
+	background-color: transparent;
+
+	&:after {
+		display: block;
+		font-size: 1.7rem;
+		}
+
+	}
+
+
+	&:hover {
+	left:0;
+
+	background-color: $primary-color;
+	color:$secondary-color;
+
+	transform: translate(0);
+	transition: Transform .5s, background-color .5s;
+	}
+
+	&:hover ul{
+		opacity: 1;
+		transition: opacity .5s;
+	}
+
+	ul{
+
+		opacity: 0;
+		transition: opacity .5s;
+
+	li{
+		list-style-type: none;
+		line-height: 45px;
+		margin: 10px;
+		text-align: right;
+		padding-right: 40px;
+
+
+		a{
+			text-decoration: none;
+			font-size: 1.5rem;
+			// color:$primary-color;
+
+			@include selector();
+			color:$secondary-color;
+
+		}
+	}
+}
+
+
+}
+
+@media screen and(min-width: 600px) {
+	nav{
+		border-right: 1px solid $primary-color;
+	}
+
+}

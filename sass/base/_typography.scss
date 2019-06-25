@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Lalezar|Rubik:400,700,900');
+
+
+html {
+	font-family: "Rubik";
+}
+
+h1, h2, h3, .subtitle, .branding{
+	font-family: "Lalezar";
+	font-weight: normal;
+	letter-spacing: .05em;
+}
+
+/*HEADER*/
+
+body {
+	margin:0;
+}
+
+h1 {
+	font-size: 8.5vw;
+	line-height: .8;
+}
+
+.subtitle {
+	border-top: 20px solid $tertiary-color;
+	padding-top: 20px;
+}
+
+.branding {
+	font-size: 1.5rem;
+	border:1px solid $primary-color;
+	margin:1rem;
+	padding: 0 .5rem;
+	border-radius: .5rem;
+}
+
+header {
+
+	min-height: 100vh;
+	color:$primary-color;
+	background-color: $secondary-color-faded;
+}

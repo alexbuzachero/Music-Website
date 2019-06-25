@@ -1,0 +1,15 @@
+.footer-wrapper {
+	max-width: 1000px;
+	margin:auto;
+}
+
+footer {
+	color:white;
+	background-color: $secondary-color;
+	min-height: 100px;
+	padding:1rem;
+
+		a{
+			@include selector();
+		}
+}
